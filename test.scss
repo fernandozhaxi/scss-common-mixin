@@ -1,0 +1,125 @@
+@import './index';
+
+// Background gradient.
+.background-gradient-default {
+  @include background-gradient(#fff, #000);
+}
+
+.background-gradient-custom-angle {
+  @include background-gradient(#fff, #000, 60deg);
+}
+
+.background-gradient-x {
+  @include background-gradient-x(#fff, #000);
+}
+
+.background-gradient-y {
+  @include background-gradient-y(#fff, #000);
+}
+
+// Background size.
+.background-cover {
+  @include background-cover('url(image)');
+}
+
+.background-contain {
+  @include background-contain('url(image)');
+}
+
+// Border radius.
+.border-top-radius {
+  @include border-top-radius(10px);
+}
+
+.border-right-radius {
+  @include border-right-radius(10px);
+}
+
+.border-bottom-radius {
+  @include border-bottom-radius(10px);
+}
+
+.border-left-radius {
+  @include border-left-radius(10px);
+}
+
+// Caret
+.caret-up-default {
+  @include caret-up();
+}
+
+.caret-up-custom {
+  @include caret-up(12px, #000);
+}
+
+.caret-right-default {
+  @include caret-right();
+}
+
+.caret-right-custom {
+  @include caret-right(12px, #000);
+}
+
+.caret-down-default {
+  @include caret-down();
+}
+
+.caret-down-custom {
+  @include caret-down(12px, #000);
+}
+
+.caret-left-default {
+  @include caret-left();
+}
+
+.caret-left-custom {
+  @include caret-left(12px, #000);
+}
+
+// Circle.
+.circle {
+  @include circle(20px);
+}
+
+// Clearfix.
+.clearfix {
+  @include clearfix();
+}
+
+// Flex center.
+.flex-center {
+  @include flex-center();
+}
+
+// Hr.
+.hr-default {
+  @include hr(#eee);
+}
+
+.hr-custom {
+  @include hr(#eee, 2px, dashed, vertical);
+}
+
+// List unstyled.
+.list-unstyle {
+  @include list-unstyle();
+}
+
+// Rect.
+.rect {
+  @include rect(10px, 20px);
+}
+
+// Square.
+.square {
+  @include square(10px);
+}
+
+// Text truncate.
+.text-truncate-default {
+  @include text-truncate();
+}
+
+.text-truncate-custom {
+  @include text-truncate(3);
+}

@@ -1,0 +1,29 @@
+@mixin background-gradient($begin, $end, $angle: 180deg) {
+  $color: mix($begin, $end, 50%);
+
+  background-color: $color;
+  background-image: linear-gradient($angle, $begin, $end);
+}
+
+@mixin background-gradient-x($begin, $end) {
+  @include background-gradient($begin, $end, 90deg);
+}
+
+@mixin background-gradient-y($begin, $end) {
+  @include background-gradient($begin, $end);
+}
+
+@mixin background-size($image, $type) {
+  background-image: $image;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $type;
+}
+
+@mixin background-cover($image) {
+  @include background-size($image, cover);
+}
+
+@mixin background-contain($image) {
+  @include background-size($image, contain);
+}

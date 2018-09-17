@@ -1,0 +1,9 @@
+@mixin hr($color, $size: 1px, $style: solid, $direction: horizontal) {
+  @if $direction != 'vertical' {
+    width: 100%;
+    border-top: $size $style $color;
+  } @else {
+    height: 100%;
+    border-left: $size $style $color;
+  }
+}

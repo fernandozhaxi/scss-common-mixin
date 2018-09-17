@@ -1,0 +1,5 @@
+@import './rect';
+
+@mixin square($size) {
+  @include rect($size, $size);
+}
